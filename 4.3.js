@@ -47,4 +47,10 @@
   setTimeout(() => {
     obj.text = "world4.3";
   }, 1000);
+
+  // 缺陷：非目标字段也会触发副作用函数
+  // 示例：
+  // setTimeout(() => {
+  //   obj.noExist = "hello vue3 4.3";
+  // }, 2000);
 })();
