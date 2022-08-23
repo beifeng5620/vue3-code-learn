@@ -16,9 +16,7 @@
     set(target, key, value) {
       // 设置属性值
       target[key] = value;
-
       trigger(target, key);
-
       // 返回true，表示写入成功
       return true;
     }
